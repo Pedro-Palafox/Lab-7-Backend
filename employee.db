@@ -1,0 +1,39 @@
+{/*
+
+CREATE DATABASE IF NOT EXISTS Employee;
+USE Employee;
+
+DROP TABLE IF EXISTS `employees`;
+CREATE TABLE `employees`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `Name` varchar(80) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `Email` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `ATC` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `Level` int(5) NULL DEFAULT NULL,
+  `Role` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `Project` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `Status` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+SET FOREIGN_KEY_CHECKS = 1;
+
+INSERT INTO employees (Name, Email, ATC, Level, Role, Project, Status) VALUES ('Jane Cooper', 'jane@accenture.com', 'CDMX', '8', 'SCRUM Master', 'Microsoft', 'June 9th');
+INSERT INTO employees (Name, Email, ATC, Level, Role, Project, Status) VALUES ('Floyd Miles', 'floyd@accenture.com', 'GDL', '7', 'QA Automation Test Lead', 'N/A', 'Staffed');
+INSERT INTO employees (Name, Email, ATC, Level, Role, Project, Status) VALUES ('Ronald Richards', 'ronald@accenture.com', 'PUE', '6', 'Feature Lead', 'N/A', 'Staffed');
+INSERT INTO employees (Name, Email, ATC, Level, Role, Project, Status) VALUES ('Marvin Mckinney', 'marvin@accenture.com', 'MTY', '3', 'Quality Engineering Manager', 'Tesla', '2026');
+INSERT INTO employees (Name, Email, ATC, Level, Role, Project, Status) VALUES ('Jerome Bell', 'jerome@accenture.com', 'QRO', '5', 'Sales Director', 'Google', 'July 12');
+INSERT INTO employees (Name, Email, ATC, Level, Role, Project, Status) VALUES ('Kathryn Murphy', 'kathryn@accenture.com', 'CDMX', '10', 'Financial Analyst II', 'Microsoft', 'June 9th');
+INSERT INTO employees (Name, Email, ATC, Level, Role, Project, Status) VALUES ('Jacob Jones', 'jacob@accenture.com', 'TIJ', '9', 'Custom Software Engineering Manager', 'Yahoo', '2026');
+INSERT INTO employees (Name, Email, ATC, Level, Role, Project, Status) VALUES ('Kristin Watson', 'kristin@accenture.com', 'MTY', '11', 'Packaged Aplication Developer', 'N/A', 'Staffed');
+INSERT INTO employees (Name, Email, ATC, Level, Role, Project, Status) VALUES ('Paul McCartney', 'paul@accenture.com', 'UK', '12', 'CEO', 'Apple Records', 'Staffed');
+INSERT INTO employees (Name, Email, ATC, Level, Role, Project, Status) VALUES ('John Lennon', 'john@accenture.com', 'NYC', '12', 'CEO', 'Apple Records', 'Staffed');
+INSERT INTO employees (Name, Email, ATC, Level, Role, Project, Status) VALUES ('Ringo Starr', 'ringo@accenture.com', 'UK', '12', 'CEO', 'Apple Records', 'Staffed');
+INSERT INTO employees (Name, Email, ATC, Level, Role, Project, Status) VALUES ('George Harrison', 'george@accenture.com', 'UK', '12', 'CEO', 'Apple Records', 'Staffed');
+INSERT INTO employees (Name, Email, ATC, Level, Role, Project, Status) VALUES ('George Harrison', 'george@accenture.com', 'UK', '12', 'CEO', 'Apple Records', 'Staffed');
+
+
+SELECT * FROM employees;
+
+
+*/}
